@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raul Games - Videojuegos, consolas y tecnología gaming">
+    <title>Raul Games | Gaming & Tecnología</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span>RAUL GAMES</span>
+            <span>Videojuegos · Consolas · Tecnología</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-mark">R</span>
+                <span class="logo-text">RAUL<span>GAMES</span></span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#destacados">Destacados</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#nosotros">Nosotros</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar productos..." autocomplete="off">
+                    <span class="search-icon">⌕</span>
+                </div>
+
+                <button class="icon-button" id="themeToggle" aria-label="Cambiar tema">
+                    ☾
+                </button>
+
+                <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Abrir menú">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="hero-label">TU MUNDO GAMING</span>
+
+                    <h1>
+                        VIDEOJUEGOS,<br>
+                        CONSOLAS Y<br>
+                        <span>TECNOLOGÍA</span>
+                    </h1>
+
+                    <p>
+                        Descubrí nuestro catálogo de productos gaming,
+                        tecnología y entretenimiento.
+                    </p>
+
+                    <a href="#catalogo" class="primary-button">
+                        EXPLORAR CATÁLOGO
+                    </a>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-glow"></div>
+
+                    <div class="hero-controller">
+                        🎮
+                    </div>
+
+                    <div class="hero-decoration decoration-one"></div>
+                    <div class="hero-decoration decoration-two"></div>
+                    <div class="hero-decoration decoration-three"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="categories-section" id="categorias">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-label">EXPLORÁ</span>
+                        <h2>CATEGORÍAS</h2>
+                    </div>
+                </div>
+
+                <div class="categories-grid">
+
+                    <button class="category-card" data-category="Juegos">
+                        <div class="category-icon">🎮</div>
+                        <div>
+                            <h3>Videojuegos</h3>
+                            <p>PlayStation · Xbox · Nintendo · PC</p>
+                        </div>
+                    </button>
+
+                    <button class="category-card" data-category="Consolas">
+                        <div class="category-icon">▣</div>
+                        <div>
+                            <h3>Consolas</h3>
+                            <p>PlayStation · Xbox · Nintendo</p>
+                        </div>
+                    </button>
+
+                    <button class="category-card" data-category="PC Gaming">
+                        <div class="category-icon">▤</div>
+                        <div>
+                            <h3>PC Gaming</h3>
+                            <p>Componentes · Equipos · Accesorios</p>
+                        </div>
+                    </button>
+
+                    <button class="category-card" data-category="Periféricos">
+                        <div class="category-icon">⌨</div>
+                        <div>
+                            <h3>Periféricos</h3>
+                            <p>Teclados · Mouse · Accesorios</p>
+                        </div>
+                    </button>
+
+                    <button class="category-card" data-category="Audio">
+                        <div class="category-icon">♫</div>
+                        <div>
+                            <h3>Audio</h3>
+                            <p>Headsets · Auriculares · Micrófonos</p>
+                        </div>
+                    </button>
+
+                    <button class="category-card" data-category="Monitores">
+                        <div class="category-icon">▱</div>
+                        <div>
+                            <h3>Monitores</h3>
+                            <p>Gaming · Ultrawide · Alta resolución</p>
+                        </div>
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="featured-section" id="destacados">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-label">SELECCIÓN RAUL GAMES</span>
+                        <h2>DESTACADOS</h2>
+                    </div>
+                </div>
+
+                <div class="featured-carousel">
+
+                    <button
+                        class="carousel-button carousel-prev"
+                        id="featuredPrev"
+                        aria-label="Productos anteriores">
+                        ←
+                    </button>
+
+                    <div class="featured-grid" id="featuredGrid"></div>
+
+                    <button
+                        class="carousel-button carousel-next"
+                        id="featuredNext"
+                        aria-label="Productos siguientes">
+                        →
+                    </button>
+
+                </div>
+
+                <div class="carousel-indicator" id="carouselIndicator">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalog-section" id="catalogo">
+            <div class="container">
+
+                <div class="section-header catalog-header">
+                    <div>
+                        <span class="section-label">TODOS LOS PRODUCTOS</span>
+                        <h2>CATÁLOGO</h2>
+                    </div>
+                </div>
+
+                <div class="catalog-controls">
+
+                    <div class="filters">
+                        <button class="filter-button active" data-filter="Todos">
+                            Todos
+                        </button>
+
+                        <button class="filter-button" data-filter="Juegos">
+                            Videojuegos
+                        </button>
+
+                        <button class="filter-button" data-filter="Consolas">
+                            Consolas
+                        </button>
+
+                        <button class="filter-button" data-filter="PC Gaming">
+                            PC Gaming
+                        </button>
+
+                        <button class="filter-button" data-filter="Periféricos">
+                            Periféricos
+                        </button>
+
+                        <button class="filter-button" data-filter="Audio">
+                            Audio
+                        </button>
+
+                        <button class="filter-button" data-filter="Monitores">
+                            Monitores
+                        </button>
+                    </div>
+
+                    <select id="sortSelect" class="sort-select">
+                        <option value="default">Ordenar</option>
+                        <option value="price-low">Precio: menor a mayor</option>
+                        <option value="price-high">Precio: mayor a menor</option>
+                        <option value="name">Nombre</option>
+                    </select>
+
+                </div>
+
+                <div class="product-grid" id="productGrid"></div>
+
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">⌕</div>
+                    <h3>No encontramos productos</h3>
+                    <p>Probá con otra búsqueda o categoría.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="offers-section" id="ofertas">
+            <div class="container">
+
+                <div class="offer-content">
+
+                    <div>
+                        <span class="section-label">OPORTUNIDADES</span>
+                        <h2>OFERTAS ESPECIALES</h2>
+                        <p>
+                            Encontrá productos seleccionados con precios especiales
+                            por tiempo limitado.
+                        </p>
+                    </div>
+
+                    <a href="#catalogo" class="primary-button">
+                        VER OFERTAS
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-section" id="nosotros">
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-title">
+                        <span class="section-label">RAUL GAMES</span>
+                        <h2>TECNOLOGÍA.<br><span>GAMING.</span><br>ENTRETENIMIENTO.</h2>
+                    </div>
+
+                    <div class="about-text">
+                        <p>
+                            Raul Games es un catálogo dedicado a videojuegos,
+                            consolas y tecnología para quienes disfrutan del
+                            mundo gaming.
+                        </p>
+
+                        <p>
+                            Explorá nuestros productos, compará características
+                            y descubrí las novedades disponibles.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <span class="logo-mark">R</span>
+                    <span class="logo-text">RAUL<span>GAMES</span></span>
+                </a>
+
+                <p>
+                    Gaming, tecnología y entretenimiento.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#nosotros">Nosotros</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <span>© 2026 Raul Games. Todos los derechos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="productModal">
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose" aria-label="Cerrar">
+                ×
+            </button>
+
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div class="modal-info">
+
+                <span class="product-category" id="modalCategory"></span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+                <div class="modal-price" id="modalPrice"></div>
+
+                <div class="modal-old-price" id="modalOldPrice"></div>
+
+                <div class="specifications">
+                    <h3>Características</h3>
+                    <ul id="modalSpecs"></ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
